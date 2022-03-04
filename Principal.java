@@ -2,16 +2,16 @@ package Chess;
 
 import javax.swing.JFrame;
 
-public class Principal extends Diseño {
+public class Principal extends Accionar {
 	
 	public static void main(String arg[]) {
 		
-		Diseño diseño= new Diseño();
+		Principal diseño= new Principal();
 		
 		diseño.setLayout(null);
-		diseño.setSize(600,600);
+		diseño.setSize(580,630);
+		diseño.setUndecorated(true);
 		diseño.setVisible(true);
-		//diseño.setUndecorated(true);
 		diseño.setLocation(600,50);
 		diseño.setTitle("Chess");
 		diseño.setResizable(true);
