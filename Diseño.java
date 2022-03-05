@@ -14,9 +14,10 @@ import javax.swing.JButton;
 public class Diseño extends JFrame {
 
 	private JPanel panel, panel2;
-	private JButton[] casilla;
+	private JButton[][] casilla;
 	private JLabel cierreV;
 	private Boolean pose= true;
+	
 	
 	public Diseño() {
 		
@@ -27,8 +28,8 @@ public class Diseño extends JFrame {
 	
 	public void diseñoLogo() {
 		
-		Image logo= new ImageIcon(getClass().getResource("logo/chess.png")).getImage();
-	     this.setIconImage(logo);
+		Image logo= new ImageIcon(getClass().getResource("imagenes/Chess.jpg")).getImage();
+	      this.setIconImage(logo);
 	}
 	
 	public void base() {
@@ -53,28 +54,20 @@ public class Diseño extends JFrame {
 		cierreV.setVerticalAlignment(SwingConstants.CENTER);
 		cierreV.setOpaque(true);
 		panel.add(cierreV);
-		
-		
 	}
 	
 	public void estructura() {
 		
 		panel2.setLayout(new GridLayout(8,8,1,1));
-		  casilla= new JButton[64];
-		    for(int i=0; i<casilla.length; i++) {
-			  casilla[i]= new JButton();
-		      if(i==1 || i==3 || i== 5 || i==7 ||i==8 || i==10 || i== 12 || i==14 ||
-		         i==17 || i==19 || i== 21 ||i==23 ||i==24 || i==26 || i== 28 || i==30 ||
-		         i==33 || i==35|| i== 37 || i==39 || i==40 || i==42 || i== 44 || i==46 ||
-		         i==49 || i==51 || i== 53 || i==55 ||i==56 || i== 58 || i== 60 || i==62){
-		    	  casilla[i].setBackground(Color.black);
-		      }else {casilla[i].setBackground(Color.white);}  
-			   
-				  
-		          casilla[i].setOpaque(true);
-		            panel2.add(casilla[i]);
-		            }
-	}
+		  casilla= new JButton[8][8];
+		    for(int i=0; i<casilla.length; i++) {	
+	          for(int j=0; j< casilla[i].length; j++) {
+		        casilla[i][j]= new JButton();
+			      if( (i+j)%2== 0) {casilla[i][j].setBackground(Color.white);
+		        }else {casilla[i][j].setBackground(Color.BLACK);}
+              panel2.add(casilla[i][j]);}
+		      }
+	          }
 	
 	public JPanel getPanel() {return this.panel;}
 	public JLabel getCierrev() {return this.cierreV;}
