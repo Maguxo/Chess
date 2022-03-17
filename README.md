@@ -7,3 +7,4 @@ el teblero de ajedrez  queda preparado para ajustar movimientos.
 se logra reducir  codigo del tablero de ajedrez reglos  de 4*8 para acomodar las piezas de ajedrez.
 busco la manera de darle vida a cada pieza del juego de ajedrez.
 No  he podido mover fichas...
+mover peones .
