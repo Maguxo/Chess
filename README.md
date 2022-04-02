@@ -8,3 +8,4 @@ se logra reducir  codigo del tablero de ajedrez reglos  de 4*8 para acomodar las
 busco la manera de darle vida a cada pieza del juego de ajedrez.
 No  he podido mover fichas.
 mover ficha .
+primero se trabaja con las acciones de botones para que de una respuesta de movimiento.
