@@ -9,3 +9,4 @@ busco la manera de darle vida a cada pieza del juego de ajedrez.
 No  he podido mover fichas.
 mover ficha .
 primero se trabaja con las acciones de botones para que de una respuesta de movimiento......
+Se logra mover fichas , ahora solo toca darle ordenes de  cómo moverse y en qué orden.
