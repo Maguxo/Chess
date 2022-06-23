@@ -1,12 +1,5 @@
 # Chess
-pasatiempo .
-se le da  diseño y color al  tablero  de l ajedrez.
-Dar color a los botones del tablero de ajedrez mediante  For  para reducir codigo  y que se vea más elegante al presentarse.
-se  ajusta las fichas al tablero.
-el teblero de ajedrez  queda preparado para ajustar movimientos.
-se logra reducir  codigo del tablero de ajedrez reglos  de 4*8 para acomodar las piezas de ajedrez.
-busco la manera de darle vida a cada pieza del juego de ajedrez.
-No  he podido mover fichas.
-mover ficha .
-primero se trabaja con las acciones de botones para que de una respuesta de movimiento......
-Se logra mover fichas , ahora solo toca darle ordenes de  cómo moverse y en qué orden.
+CHESS es un juego  pasatiempo  creado en codigo java.
+1) se crea  clases  en la cual esta las fichas  independientemente,  el diseño del tablero,  y tambien las acciones al presionar el mouse.
+2)  Se tiene en cuenta que en cada clase tenga  su función; por ejemplo:  las fichas en su clase correspondiente tendra su forma de moverse en el tablero para que asi al ser invocadas cumplan su objetivo .
+3)  por ultimo hay una clase principal que es la que ejecuta  todo el codigo. separe en clases para no tener que escribir tanto codigo en una sola clase.
