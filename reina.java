@@ -5,18 +5,20 @@ import java.awt.Image;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
 
-public class reina {
+//realizado por: Magucho 
+//proyecto: Chess
 
-	private int x=7;
-	private int y=3;
-	private int x2=0;
-	private int y2=3;
+public class reina {
+	private int x=7, y=3;
+	private int x2=0,y2=3;
 	private ImageIcon reinaN= null, reinaB= null; 
     private JButton casilla[][]= new JButton[8][8];
     private ImageIcon reinaN2= new ImageIcon("src/Chess/fichas/reinaN.png");
 	private ImageIcon reinaB2= new ImageIcon("src/Chess/fichas/reinaB.png");
   
-    
+    public reina (JButton [][] casilla) {
+    	this.casilla= casilla;
+    }
 	
 	public  ImageIcon imagenBlanco() {
 		reinaB= new ImageIcon(reinaB2.getImage().getScaledInstance(36, 50, Image.SCALE_SMOOTH));

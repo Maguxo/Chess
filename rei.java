@@ -5,19 +5,21 @@ import java.awt.Image;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
 
-public class rei {
+//realizado por: Magucho 
+//proyecto: Chess
 
-    private int x= 7;
-    private int y=4;
-    private int x2=0;
-    private int y2=4;
+public class rei {
+    private int x= 7,y=4;
+    private int x2=0,y2=4;
 	private ImageIcon reiN= null, reiB= null; 
     private JButton casilla[][]= new JButton[8][8];
     private ImageIcon reiN2= new ImageIcon("src/Chess/fichas/reyN.png");
 	private ImageIcon reiB2= new ImageIcon("src/Chess/fichas/reyB.png");
   
+	public rei(JButton [][] casilla) {
+		this.casilla= casilla;
+	}
     
-	
 	public  ImageIcon imagenBlanco() {
 		reiB= new ImageIcon(reiB2.getImage().getScaledInstance(36, 50, Image.SCALE_SMOOTH));
 		return reiB;

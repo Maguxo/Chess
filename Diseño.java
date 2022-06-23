@@ -4,10 +4,6 @@ import java.awt.Color;
 import java.awt.Font;
 import java.awt.GridLayout;
 import java.awt.Image;
-import java.awt.event.MouseEvent;
-import java.awt.event.MouseListener;
-import java.awt.event.MouseMotionListener;
-
 import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
@@ -15,35 +11,32 @@ import javax.swing.SwingConstants;
 import javax.swing.JLabel;
 import javax.swing.JButton;
 
+//realizado por: Magucho 
+//proyecto: Chess
+
+@SuppressWarnings("serial")
 public class Diseño extends JFrame  {
 
 	private JPanel    panel, panel2;
 	private JLabel    cierreV;
 	private JButton   casilla[][]= new JButton[8][8];
-	private peon fichaPeon= new peon();
-    private torre fichaTorre= new torre();
-    private caballo fichaCaballo= new caballo();
-    private alfil fichaAlfil= new alfil();
-    private reina fichaReina= new reina();
-    private rei fichaRey= new rei();
+	private peon fichaPeon= new peon(this.casilla);
+    private torre fichaTorre= new torre(this.casilla);
+    private caballo fichaCaballo= new caballo(this.casilla);
+    private alfil fichaAlfil= new alfil(this.casilla);
+    private reina fichaReina= new reina(this.casilla);
+    private rei fichaRey= new rei(this.casilla);
     
 	public Diseño() {
-		//this.casilla=fichaPeon.getCasilla();
-		//this.casilla=fichaTorre.getCasilla();
-		//this.casilla= fichaCaballo.getCasilla();
-		//this.casilla= fichaAlfil.getCasilla();
-		//this.casilla= fichaReina.getCasilla();
-		this.casilla= fichaRey.getCasilla();
 		diseñoLogo();    
 		base();
 		estructura();
 		posicionInicialB();
 	    posicionInicialN();
-	   
 	}
 		
 	public void posicionInicialN() {
-      for(int i=0; i<=7; i++) {
+      for(int i=0; i<8; i++) {
 	    casilla[6][i].setIcon(fichaPeon.imagenNegra());
       }
 	    casilla[7][0].setIcon(fichaTorre.imagenNegra());
@@ -71,7 +64,7 @@ public class Diseño extends JFrame  {
 	}
 	
 	public void diseñoLogo() {	
-		Image logo= new ImageIcon(getClass().getResource("logo/descarga.png")).getImage().getScaledInstance(500, 500, Image.SCALE_SMOOTH);
+		Image logo= new ImageIcon(getClass().getResource("logo/chess.jpg")).getImage().getScaledInstance(500, 500, Image.SCALE_SMOOTH);
 	      this.setIconImage(logo);
 	}
 	
@@ -105,11 +98,11 @@ public class Diseño extends JFrame  {
 		        casilla[i][j]= new JButton();
 			      if( (i+j)%2== 0) {
 			    	  casilla[i][j].setBackground(Color.white);
-		        }else {
+		           }else {
 		        	casilla[i][j].setBackground(Color.BLACK);
 		        	} 
-			      casilla[i][j].setOpaque(true);
-			      panel2.add(casilla[i][j]);
+			          casilla[i][j].setOpaque(true);
+			            panel2.add(casilla[i][j]);
 			      }          
 		      }
 	          }

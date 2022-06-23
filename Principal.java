@@ -2,7 +2,7 @@ package Chess;
 
 import javax.swing.JFrame;
 
-public class Principal extends Accionar {
+public class Principal extends Accionar2 {
 	
 	public static void main(String arg[]) {
 		
