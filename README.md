@@ -1,6 +1,6 @@
 
 <div id="jol" align="center">
-<img src="https://i.gifer.com/origin/dd/dde3df5b5ffbd3b3cde0715f2854b2ec.gif" heigth="200" width="250"
+<img src="https://i.gifer.com/origin/dd/dde3df5b5ffbd3b3cde0715f2854b2ec.gif" height="160" width="300"
 </div>
 
 # Chess
