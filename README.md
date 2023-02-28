@@ -9,3 +9,4 @@ CHESS es un juego  pasatiempo  creado en codigo java.
 2)  Se tiene en cuenta que en cada clase tenga  su función; por ejemplo:  las fichas en su clase correspondiente tendra su forma de moverse en el tablero para que asi al ser invocadas cumplan su objetivo .
 3) por ultimo hay una clase principal que es la que ejecuta  todo el codigo. separe en clases para no tener que escribir tanto codigo en una sola clase.
 4) 
+5)
