@@ -12,3 +12,4 @@ CHESS es un juego  pasatiempo  creado en codigo java.
 5)
 6)
 7)
+8)
